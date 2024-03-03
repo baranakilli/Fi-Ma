@@ -24,9 +24,4 @@ jobs:
         env:
           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
         run: |
-          npm run build
-          git config --global user.email "akillibaran@hotmail.com"
-          git config --global user.name "Baran Akıllı"
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push origin main:gh-pages
+          npm run deploy
