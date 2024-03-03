@@ -15,15 +15,18 @@ function App() {
   }, []);
 
   const getProducts = () => {
-    fetch('/sapigw/suppliers/645403/products?onSale=true&size=9999', {
-      method: 'get',
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        Authorization: 'Basic ' + process.env.REACT_APP_API_TOKEN,
-        'User-Agent': '645403 - SelfIntegration',
-      },
-    })
+    fetch(
+      'https://api.trendyol.com/sapigw/suppliers/645403/products?onSale=true&size=9999',
+      {
+        method: 'get',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          Authorization: 'Basic ' + process.env.REACT_APP_API_TOKEN,
+          'User-Agent': '645403 - SelfIntegration',
+        },
+      }
+    )
       .then((resp) => resp.json())
       .then((data) => loadProducts(data));
     setSearchField('')
