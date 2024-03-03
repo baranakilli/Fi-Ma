@@ -16,7 +16,7 @@ function App() {
 
   const getProducts = () => {
     fetch(
-      '/sapigw/suppliers/645403/products?onSale=true&size=9999',
+      'https://api.trendyol.com/sapigw/suppliers/645403/products?onSale=true&size=9999',
       {
         method: 'get',
         headers: {
