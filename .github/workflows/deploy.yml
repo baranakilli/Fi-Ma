@@ -26,8 +26,9 @@ jobs:
         run: |
           git config --global user.email "akillibaran@hotmail.com"
           git config --global user.name "Baran Akıllı"
+          npm run predeploy
+          npm run build
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push origin main:gh-pages
-          npm run deploy
+          git push origin gh-pages
 
