@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/fi-ma-main/static/css/main.7bcce3d9.css",
-    "main.js": "/fi-ma-main/static/js/main.46de7f98.js",
-    "static/js/787.02ca1917.chunk.js": "/fi-ma-main/static/js/787.02ca1917.chunk.js",
-    "static/media/banner-photo-3.jpg": "/fi-ma-main/static/media/banner-photo-3.9d49085008354ccc490b.jpg",
-    "static/media/banner-photo-4.jpg": "/fi-ma-main/static/media/banner-photo-4.c5cfca028aef8a01878e.jpg",
-    "static/media/banner-photo-2.jpg": "/fi-ma-main/static/media/banner-photo-2.f2ed5cd67ae833173970.jpg",
-    "static/media/banner-photo-1.jpg": "/fi-ma-main/static/media/banner-photo-1.8abd7b3c0e8983dd81c2.jpg",
-    "static/media/fi-ma.jpg": "/fi-ma-main/static/media/fi-ma.f5fdac14862a99e152ce.jpg",
-    "index.html": "/fi-ma-main/index.html",
-    "main.7bcce3d9.css.map": "/fi-ma-main/static/css/main.7bcce3d9.css.map",
-    "main.46de7f98.js.map": "/fi-ma-main/static/js/main.46de7f98.js.map",
-    "787.02ca1917.chunk.js.map": "/fi-ma-main/static/js/787.02ca1917.chunk.js.map"
+    "main.css": "/fi-ma/static/css/main.7bcce3d9.css",
+    "main.js": "/fi-ma/static/js/main.e9386828.js",
+    "static/js/787.02ca1917.chunk.js": "/fi-ma/static/js/787.02ca1917.chunk.js",
+    "static/media/banner-photo-3.jpg": "/fi-ma/static/media/banner-photo-3.9d49085008354ccc490b.jpg",
+    "static/media/banner-photo-4.jpg": "/fi-ma/static/media/banner-photo-4.c5cfca028aef8a01878e.jpg",
+    "static/media/banner-photo-2.jpg": "/fi-ma/static/media/banner-photo-2.f2ed5cd67ae833173970.jpg",
+    "static/media/banner-photo-1.jpg": "/fi-ma/static/media/banner-photo-1.8abd7b3c0e8983dd81c2.jpg",
+    "static/media/fi-ma.jpg": "/fi-ma/static/media/fi-ma.f5fdac14862a99e152ce.jpg",
+    "index.html": "/fi-ma/index.html",
+    "main.7bcce3d9.css.map": "/fi-ma/static/css/main.7bcce3d9.css.map",
+    "main.e9386828.js.map": "/fi-ma/static/js/main.e9386828.js.map",
+    "787.02ca1917.chunk.js.map": "/fi-ma/static/js/787.02ca1917.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bcce3d9.css",
-    "static/js/main.46de7f98.js"
+    "static/js/main.e9386828.js"
   ]
 }
