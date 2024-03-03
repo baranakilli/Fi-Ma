@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+#hero {
+  background-color: #eee;
+  padding: 30px 60px 30px 80px;
+}
+
+#slogan {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  padding: 0 50px;
+}
+
+#logo-container {
+  width: 440px;
+  height: 440px;
+}
+
+#fi-ma-logo{
+  padding: 20px;
+  width: 400px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
+} 
+
+#fi-ma-logo:hover {
+  padding: 5px;
+  width: 430px;
+  transition: 150ms ease-in-out;
+}
+
+#right {
+  background-color: #d4d4d4;
+  width: 70%;
+  padding: 0 20px;
+  height: 520px;
+  border-radius: 50px;
+  margin-left: 30px;
+}
+
+#photo-1 {
+  position: relative;
+  width: 350px;
+  object-fit: cover;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  border-radius: 25px;
+  left: 0%;
+  top: 5%;
+  z-index: 3;
+}
+
+#photo-2 {
+  position: absolute;
+  width: 340px;
+  object-fit: cover;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  left: 27%;
+  top: 10%;
+  z-index: 2;
+}
+
+#photo-3 {
+  position: absolute;
+  width: 300px;
+  object-fit: cover;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  border-radius: 25px;
+  left: 49%;
+  top: 8%;
+  z-index: 1;
+} 
+
+#photo-4 {
+  position: absolute;
+  width: 320px;
+  object-fit: cover;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  right: 2%;
+  top: 3.7%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  #right {
+    width: 65%;
+  }
+  #photo-2 {
+    left: 33%;
+  }
+  #photo-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  #right {
+    width: 54%;
+  }
+  #photo-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #hero {
+    justify-content: center;
+    padding: 30px 80px;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #fi-ma-logo {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #hero {
+    padding: 30px 50px;
+  }
+
+  #fi-ma-logo {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+
+  #fi-ma-logo {
+    height: 150px;
+  }
+}

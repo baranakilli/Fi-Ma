@@ -1,0 +1,23 @@
+.product-card {
+  width: 170px;
+}
+
+.product-card:hover {
+  cursor: pointer;
+}
+
+.product-title{
+  margin: auto;
+  font-size: 14px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 210px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+}
