@@ -5,3 +5,9 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
+
+#product-link {
+  text-decoration: none;
+  color: black;
+}
+
