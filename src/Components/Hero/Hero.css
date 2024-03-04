@@ -14,17 +14,19 @@
 #logo-container {
   width: 440px;
   height: 440px;
+  display: flex;
+  justify-content: center;
 }
 
-#fi-ma-logo{
+#fi-ma-logo {
   padding: 20px;
-  width: 400px;
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.23);
-} 
+}
 
 #fi-ma-logo:hover {
   padding: 5px;
@@ -78,7 +80,7 @@
   left: 49%;
   top: 8%;
   z-index: 1;
-} 
+}
 
 #photo-4 {
   position: absolute;
@@ -94,6 +96,10 @@
 }
 
 @media screen and (max-width: 1600px) {
+  #hero {
+    justify-content: center;
+    padding: 30px 80px;
+  }
   #right {
     width: 65%;
   }
@@ -124,6 +130,10 @@
     display: none;
   }
 
+  #logo-container {
+    height: 290px;
+  }
+
   #fi-ma-logo {
     height: 250px;
   }
@@ -134,12 +144,19 @@
     padding: 30px 50px;
   }
 
+  #logo-container {
+    height: 240px;
+  }
+
   #fi-ma-logo {
     height: 200px;
   }
 }
 
 @media screen and (max-width: 325px) {
+  #logo-container {
+    height: 190px;
+  }
 
   #fi-ma-logo {
     height: 150px;

@@ -2,8 +2,8 @@ import './ProductListHeader.css';
 
 const ProductListHeader = ({ products, onSearchChange, searchField }) => {
   return (
-    <div className="flex justify-center items-center">
-      <h1 className="tc mt3 f2">Tüm Ürünler ({products.length})</h1>
+    <div id="list-header">
+      <h1 id="list-title" className="tc mt3 mh1 f2">Tüm Ürünler ({products.length})</h1>
       <div id="search-box">
         <input
           id="search-box-input"

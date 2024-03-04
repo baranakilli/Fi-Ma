@@ -1,3 +1,9 @@
+#list-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #search-box {
   display: flex;
   align-items: center;
@@ -22,3 +28,29 @@
   opacity: 0.75;
   color: black;
 }
+
+@media screen and (max-width: 850px) {
+  #list-title {
+    margin-bottom: 0;
+  }
+
+  #list-header {
+    flex-direction: column;
+  }
+
+  #search-box {
+    position: static;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #list-title {
+    line-height: 50px;
+  }
+
+  #search-box {
+    margin-top: 10px;
+  }
+}
+
