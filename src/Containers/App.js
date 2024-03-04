@@ -15,12 +15,17 @@ function App() {
   }, []);
 
   const getProducts = () => {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'block';
     fetch('https://gettrendyolproducts-j3kslsf7ga-uc.a.run.app')
       .then((resp) => resp.json())
-      .then((data) => loadProducts(data));
-    setSearchField('')
+      .then((data) => {
+        loadProducts(data);
+        loader.style.display = 'none';
+      });
+    setSearchField('');
   };
-  
+
   const loadProducts = (products) => {
     const uniqueProductsMap = new Map();
     products.content.forEach((product) => {
@@ -32,7 +37,7 @@ function App() {
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
-  }
+  };
 
   const filteredProducts = uniqueProducts.filter((product) => {
     return product.title.toLowerCase().includes(searchField.toLowerCase());
@@ -42,7 +47,11 @@ function App() {
     <div className="App">
       <Navigation />
       <Hero />
-      <ProductListHeader products={filteredProducts} onSearchChange={onSearchChange} searchField={searchField}/>
+      <ProductListHeader
+        products={filteredProducts}
+        onSearchChange={onSearchChange}
+        searchField={searchField}
+      />
       <ProductList products={filteredProducts} />
     </div>
   );
