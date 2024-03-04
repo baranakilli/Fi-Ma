@@ -8,7 +8,7 @@ const ProductList = ({ products }) => {
         const lowerCaseBrand = product.brand.toLowerCase();
         const transformedTitle = product.title.replace(/\s+/g, '-').toLowerCase() + '-p-';
         return (
-          <a id='product-link' href={`https://www.trendyol.com/${lowerCaseBrand}/${transformedTitle}${product.productContentId}?boutiqueId=61&merchantId=645403&filterOverPriceListings=false&sav=true`}>
+          <a className='product-link' href={`https://www.trendyol.com/${lowerCaseBrand}/${transformedTitle}${product.productContentId}?boutiqueId=61&merchantId=645403&filterOverPriceListings=false&sav=true`}>
             <ProductCard
               key={product.id}
               id={product.id}
