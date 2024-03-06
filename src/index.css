@@ -29,7 +29,25 @@ p {
   margin: 0;
 }
 
+#nightowl-switcher-default {
+  left: 15px !important;
+  top: 15px !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width: 450px) {
+  #nightowl-switcher-default {
+    left: 6px !important;
+    top: 10px !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  #nightowl-switcher-default svg {
+    width: 20px !important;
+  }
 }

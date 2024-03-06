@@ -11,11 +11,11 @@ const ProductList = ({ products }) => {
           <a
             className="product-link"
             rel="noreferrer noopener"
+            key={product.id}
             target="_blank"
             href={`https://www.trendyol.com/${lowerCaseBrand}/${transformedTitle}${product.productContentId}?boutiqueId=61&merchantId=645403&filterOverPriceListings=false&sav=true`}
           >
             <ProductCard
-              key={product.id}
               id={product.id}
               title={product.title}
               imageUrl={product.images[0].url}
