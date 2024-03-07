@@ -57,7 +57,7 @@
   font-size: 34px;
   font-weight: 400;
   color: #aaa;
-  animation: 5s slowly-appear-slogan linear;
+  animation: 5s slowly-appear-slogan ease-out;
 }
 
 #banner-left {
