@@ -53,12 +53,14 @@ function App() {
     <div className="App">
       <Navigation />
       <Hero />
-      <ProductListHeader
-        products={filteredProducts}
-        onSearchChange={onSearchChange}
-        searchField={searchField}
-      />
-      <ProductList products={filteredProducts} />
+      <section id='all-products'>
+        <ProductListHeader
+          products={filteredProducts}
+          onSearchChange={onSearchChange}
+          searchField={searchField}
+        />
+        <ProductList products={filteredProducts} />
+      </section>
     </div>
   );
 }
