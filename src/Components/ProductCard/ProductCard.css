@@ -1,6 +1,7 @@
 .product-card {
   width: 240px;
   display: flex;
+  padding: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,4 +26,5 @@
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 4px;
+  border: 2px solid #777;
 }
