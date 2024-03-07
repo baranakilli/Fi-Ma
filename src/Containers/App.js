@@ -35,7 +35,7 @@ function App() {
   const loadProducts = (products) => {
     const uniqueProductsMap = new Map();
     products.content.forEach((product) => {
-      uniqueProductsMap.set(product.title, product);
+      uniqueProductsMap.set(product.productContentId, product);
     });
     const uniqueProductsArray = Array.from(uniqueProductsMap.values());
     setUniqueProducts(uniqueProductsArray);
