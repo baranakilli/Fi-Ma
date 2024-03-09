@@ -4,12 +4,7 @@ import Hero from '../Components/Hero/Hero';
 import ProductListHeader from '../Components/ProductListHeader/ProductListHeader';
 import ProductList from '../Components/ProductList/ProductList';
 import { useEffect, useState } from 'react';
-import { createNightowl } from '@bufferhead/nightowl';
 
-createNightowl({
-  defaultMode: 'light',
-  toggleButtonMode: 'newState',
-});
 
 function App() {
   const [uniqueProducts, setUniqueProducts] = useState([]);

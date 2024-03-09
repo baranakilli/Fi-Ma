@@ -82,7 +82,37 @@
   animation: 2.5s banner-right-slide-in ease-out;
 }
 
-#anchor-to-product-list {
+#whatsapp-logo-box {
+  display: none;
+  position: fixed;
+  top: 91vh;
+  left: 60px;
+  transform: translate(-50%,-50%);
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  justify-content: center;
+  align-items: center;
+  width: 3.6vw;
+  min-width: 55px;
+  aspect-ratio: 1;
+  z-index: 1;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#whatsapp-logo-box:hover {
+  width: 3.4vw;
+}
+
+#whatsapp-logo {
+  fill: white;
+  width: 60%;
+}
+
+#scroll-more-arrows {
   position: absolute;
   top: 96%;
   left: 50%;
@@ -95,7 +125,7 @@
   align-items: center;
 }
 
-#scroll-more-arrow-1 {
+#scroll-more-arrow1 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -106,7 +136,7 @@
   animation-delay: 3s;
 }
 
-#scroll-more-arrow-2 {
+#scroll-more-arrow2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -260,25 +290,29 @@
 }
 
 @media screen and (max-width: 450px) {
-  #hero {
-    padding: 30px 50px;
-  }
-
-  #logo-container {
-    height: 240px;
-  }
-
   #fi-ma-logo {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  #logo-container {
-    height: 190px;
+    animation-duration: 8s;
   }
 
-  #fi-ma-logo {
-    height: 150px;
+  #fi-ma-title {
+    top: 60%;
+    font-size: 70px;
+    animation: 2s fade-in ;
+  }
+
+  #fi-ma-slogan {
+    font-size: 25px;
+    bottom: 25%;
+    width: 100%;
+    animation-duration: 1.5s;
+  }
+
+  #scroll-more-arrows {
+    top: 80%;
+  }
+
+  #whatsapp-logo-box {
+    top: 90vh;
+    left: 40px;
   }
 }
