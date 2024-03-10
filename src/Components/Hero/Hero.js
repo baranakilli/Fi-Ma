@@ -12,10 +12,9 @@ window.onscroll = function () {
 
 const Hero = () => {
   return (
-    <div id="hero" className="nightowl-daylight">
+    <div id="hero">
       <img
         id="banner-left"
-        className="nightowl-safe"
         src={require('./banner-photo-left.jpg')}
         alt="banner-left"
       />
@@ -36,7 +35,6 @@ const Hero = () => {
       </div>
       <img
         id="banner-right"
-        className="nightowl-safe"
         src={require('./banner-photo-right.jpg')}
         alt="banner-right"
       />
@@ -46,7 +44,6 @@ const Hero = () => {
       <a id="scroll-more-arrows" href="#all-products">
         <svg
           id="scroll-more-arrow1"
-          className="fade-in tilt"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -54,7 +51,6 @@ const Hero = () => {
         </svg>
         <svg
           id="scroll-more-arrow2"
-          className="fade-in tilt"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >

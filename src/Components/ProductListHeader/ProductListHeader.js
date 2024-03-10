@@ -3,9 +3,9 @@ import './ProductListHeader.css';
 const ProductListHeader = ({ products, onSearchChange, searchField }) => {
   return (
     <div id="list-header">
-      <div className='flex justify-between items-center'>
+      <div id='list-title-box'>
         <div id="loader"></div>
-        <h1 id="list-title" className="tc mt3 mh1 f2">
+        <h1 id="list-title">
           Tüm Ürünler ({products.length})
         </h1>
       </div>

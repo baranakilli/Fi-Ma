@@ -13,10 +13,6 @@
   align-items: center;
 }
 
-#hero .nightowl-safe {
-  filter: invert(0%)
-}
-
 #logo-container {
   position: relative;
   width: 727px;

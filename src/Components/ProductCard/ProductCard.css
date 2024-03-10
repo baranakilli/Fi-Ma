@@ -2,9 +2,18 @@
   width: 240px;
   display: flex;
   padding: 10px;
+  margin: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ( 0 );
+  transition: transform .25s ease-out;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 );
+  border: 1px solid #777;
+  border-radius: 0.5rem;
 }
 
 .product-card:hover {

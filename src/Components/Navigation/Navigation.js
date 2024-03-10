@@ -2,7 +2,7 @@ import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <nav className='nightowl-daylight'>
+    <nav>
       <h1 id="logo">Fi-MA</h1>
     </nav>
   );

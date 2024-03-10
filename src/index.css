@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -41,25 +47,7 @@ p {
   margin: 0;
 }
 
-#nightowl-switcher-default {
-  left: 20px !important;
-  top: 102vh !important;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-@media screen and (max-width: 450px) {
-  #nightowl-switcher-default {
-    left: 6px !important;
-    top: 10px !important;
-    width: 35px !important;
-    height: 35px !important;
-  }
-
-  #nightowl-switcher-default svg {
-    width: 20px !important;
-  }
 }
