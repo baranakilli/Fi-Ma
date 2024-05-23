@@ -1,10 +1,9 @@
-import './App.css';
-import Navigation from '../Components/Navigation/Navigation';
-import Hero from '../Components/Hero/Hero';
-import ProductListHeader from '../Components/ProductListHeader/ProductListHeader';
-import ProductList from '../Components/ProductList/ProductList';
+import { Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
+import Navigation from '../Components/Routes/Navigation/Navigation';
+import Home from '../Components/Routes/Home/Home';
+import AllProducts from '../Components/Routes/AllProducts/AllProducts';
+import './App.css';
 
 function App() {
   const [uniqueProducts, setUniqueProducts] = useState([]);
@@ -12,6 +11,7 @@ function App() {
 
   useEffect(() => {
     getProducts();
+    window.history.scrollRestoration = 'manual';
     // eslint-disable-next-line
   }, []);
 
@@ -44,19 +44,39 @@ function App() {
     return product.title.toLowerCase().includes(searchField.toLowerCase());
   });
 
+  const tenNewProducts = uniqueProducts.slice(0, 10);
+
+  const tenTrendProducts = uniqueProducts
+    .filter((product) => product.brand !== 'Fimabijuteri')
+    .sort((a, b) => b.quantity - a.quantity)
+    .slice(0, 10);
+
   return (
-    <div className="App">
-      <Navigation />
-      <Hero />
-      <section id='all-products'>
-        <ProductListHeader
-          products={filteredProducts}
-          onSearchChange={onSearchChange}
-          searchField={searchField}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Navigation
+            onSearchChange={onSearchChange}
+            searchField={searchField}
+          />
+        }
+      >
+        <Route
+          index
+          element={
+            <Home
+              tenNewProducts={tenNewProducts}
+              tenTrendProducts={tenTrendProducts}
+            />
+          }
         />
-        <ProductList products={filteredProducts} />
-      </section>
-    </div>
+        <Route
+          path="allproducts"
+          element={<AllProducts filteredProducts={filteredProducts} />}
+        />
+      </Route>
+    </Routes>
   );
 }
 

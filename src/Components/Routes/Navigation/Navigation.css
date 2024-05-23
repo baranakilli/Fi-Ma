@@ -1,0 +1,101 @@
+nav {
+  background-color: #111;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0 0 15px 15px ;
+  width: 100vw;
+  height: 8dvh;
+}
+
+.transparent-navbar {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.transparent-navbar:hover {
+  background-color: #111;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.43);
+}
+
+#navbar-left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+#logo {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-self: center;
+  margin: 5px 0 0 0;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#navbar-right-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+}
+
+#navbar-right-container > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+#navbar-right-container > a:hover {
+  text-decoration: underline;
+}
+
+#whatsapp-logo-box {
+  display: none;
+  position: fixed;
+  top: 92dvh; 
+  left: 60px;
+  transform: translate(-50%,-50%);
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  justify-content: center;
+  align-items: center;
+  width: 3.6vw;
+  min-width: 55px;
+  aspect-ratio: 1;
+  z-index: 1;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#whatsapp-logo-box:hover {
+  width: 3.4vw;
+}
+
+#whatsapp-logo {
+  fill: white;
+  width: 60%;
+}
+
+@media screen and (max-width: 1412px) {
+  nav {
+    display: none;
+  }
+}

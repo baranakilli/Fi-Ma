@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
   padding: 0 8vw;
+  min-height: 85vh;
 }
 
 .product-link {

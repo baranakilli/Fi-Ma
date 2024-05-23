@@ -1,0 +1,26 @@
+#search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  width: 220px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: white;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+#search-box-input {
+  color: white;
+  padding-top: 2.5px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+#search-icon {
+  width: 18px;
+  opacity: 0.75;
+  fill: white;
+}
